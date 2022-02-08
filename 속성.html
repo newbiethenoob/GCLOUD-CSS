@@ -1,0 +1,19 @@
+<body>
+    <style>
+        h5[title] { background-color : red; }
+        h5[class~=header] { background-color : yellow; }
+        h5[class^=con] { background-color : lightblue; }
+        h5[class$=esc] { background-color : orange; }
+        h5[class*=tiv] { background-color : aqua; }
+        div{font-size: 30px;}
+        h5[class*=c] {font-size: 2rem !important; }
+    </style>
+        <h5>h5 제목</h5>
+        <h5 title="제목1">h5 제목 1</h5>
+        <h5 class="title header">h5 제목 2</h5>
+        <h5 class="content">h5 제목 3</h5>
+        <div>
+            <h5 class="desc">h5 제목 4</h5>
+            <h5 class="active">h5 제목 5</h5>
+        </div>        
+</body>
