@@ -1,0 +1,37 @@
+<style>
+    body {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    p {
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .abs {
+        position: absolute;
+        /* bottom: 0px; */
+        top: 30px;
+        left: 30px;
+        background-color: rgba(255, 84, 104, .3)
+    }
+    div{position: relative;}
+    /* static이 아닌 부모일때는 absolute의 기준점이 부모의 좌측 상단이 됨 */
+</style>
+
+<body>
+    <h1>absolute 적용</h1>
+    <p>static</p>
+
+    <div style="border: 1px solid black;">
+        <p class='abs'>absolute</p>
+    </div>
+    
+    <p>static</p>
+
+    
+</body>
