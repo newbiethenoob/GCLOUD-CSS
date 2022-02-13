@@ -1,0 +1,43 @@
+<style>
+    div > div{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    #top {
+        background-color: red;
+        z-index: 3;
+        top: 0; left: 0;
+    }
+
+    #center {
+        background-color: green;
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #bottom {
+        background-color: blue;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+    }
+    #box{
+        border: 1px solid black;
+        width: 200px; height: 100px;
+        overflow: auto;
+        position: relative; /* #부모의 position이 static만 아니라면 박스안에 들어감 */
+    }
+    /* #box position : static; 나머지 top~bottom position : absolute */
+</style>
+
+<body>
+    <div id="box">
+        <div id="top">top</div>
+        <div id="center">center</div>
+        <div id="bottom">bottom</div>
+    </div>
+
+</body>
